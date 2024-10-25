@@ -7,9 +7,9 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://stageapi.monkcommerce.app", // The API endpoint you're trying to access
+        target: "http://stageapi.monkcommerce.app",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""), // Adjust this to match your API path
+        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },

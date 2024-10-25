@@ -52,7 +52,6 @@ function ProductPicker({
       }page=${page}&limit=${limit}`,
       options
     );
-
     if (!res.ok) throw new Error(res.statusText + res.status.toString());
 
     const data = await res.json();
