@@ -97,7 +97,6 @@ function ListItem({ index, item }: ListItemProps) {
 
 const VariantItem = ({
   variant,
-  index,
   productId,
 }: {
   variant: Variant;

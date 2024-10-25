@@ -27,7 +27,7 @@ function ProductPickerItem({
   useEffect(() => {
     onVariantChange(item.id, checkedVariants);
   }, [checkedVariants]);
-  const handleVariantCheck = (variant: Variant, isChecked: boolean) => {
+  const handleVariantCheck = (variant: Variant) => {
     setCheckedVariants((prev) => [...prev, variant]);
     setIsParentChecked(true);
 
@@ -68,7 +68,7 @@ function ProductPickerItem({
                 type="checkbox"
                 className="h-5 w-5 m-3 rounded-md bg-teal-600"
                 checked={checkedVariants.some((v) => v.id === variant.id)}
-                onChange={(e) => handleVariantCheck(variant, e.target.checked)}
+                onChange={() => handleVariantCheck(variant)}
               />
 
               <span>{variant.title}</span>
