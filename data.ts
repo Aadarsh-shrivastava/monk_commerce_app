@@ -1,119 +1,179 @@
-export type Class = {
-  id: number;
-  name: string;
-  type: string;
-  capacity: number;
-  currentBookings: string[];
-  waitlist: string[];
-  startTime: Date | undefined;
-  endTime: Date | undefined;
-  description: string;
-  image?: string;
-};
-
-const classes: Class[] = [
+export default [
   {
-    id: 1,
-    name: "Morning Yoga",
-    type: "yoga",
-    capacity: 10,
-    currentBookings: ["user1", "user2", "user3", "user4", "user5"],
-    waitlist: [],
-    startTime: new Date("2024-10-10T07:00:00"),
-    endTime: new Date("2024-10-10T08:00:00"),
-    description:
-      "Start your day with a refreshing morning yoga session. This class focuses on gentle stretches and breathing exercises to energize your body and calm your mind. Suitable for all levels.",
-    image:
-      "https://t3.ftcdn.net/jpg/04/87/48/66/360_F_487486623_CatNgUbulZ6rOpENckeTzRfY7IzrqOKd.jpg",
+    id: 77,
+    title: "Fog Linen Chambray Towel - Beige Stripe",
+    variants: [
+      {
+        id: 1,
+        product_id: 77,
+        title: "XS / Silver",
+      },
+      {
+        id: 2,
+        product_id: 77,
+        title: "S / Silver",
+        price: "49",
+      },
+      {
+        id: 3,
+        product_id: 77,
+        title: "M / Silver",
+        price: "49",
+      },
+    ],
+    image: {
+      id: 266,
+      product_id: 77,
+      src: "https://cdn11.bigcommerce.com/s-p1xcugzp89/products/77/images/266/foglinenbeigestripetowel1b.1647248662.386.513.jpg?c=1",
+    },
   },
   {
-    id: 2,
-    name: "Evening Gym",
-    type: "gym",
-    capacity: 15,
-    currentBookings: [
-      "user6",
-      "user7",
-      "user8",
-      "user9",
-      "user10",
-      "user11",
-      "user12",
-      "user13",
-      "user14",
-      "user15",
+    id: 80,
+    title: "Orbit Terrarium - Large",
+    variants: [
+      {
+        id: 64,
+        product_id: 80,
+        title: "Default Title",
+        price: "109",
+      },
     ],
-    waitlist: ["user123", "user456"],
-    startTime: new Date("2024-10-10T18:00:00"),
-    endTime: new Date("2024-10-10T19:30:00"),
-    description:
-      "Join our evening gym session for a comprehensive workout. This class includes strength training, cardio exercises, and guided fitness routines tailored for various fitness levels.",
+    image: {
+      id: 272,
+      product_id: 80,
+      src: "https://cdn11.bigcommerce.com/s-p1xcugzp89/products/80/images/272/roundterrariumlarge.1647248662.386.513.jpg?c=1",
+    },
   },
   {
-    id: 3,
-    name: "Dance Workshop",
-    type: "dance",
-    capacity: 12,
-    currentBookings: [
-      "user15",
-      "user16",
-      "user17",
-      "user18",
-      "user19",
-      "user20",
-      "user21",
-      "user22",
-      "user23",
+    id: 85,
+    title: "Handmade Ceramic Vase - Blue",
+    variants: [
+      {
+        id: 101,
+        product_id: 85,
+        title: "Small",
+        price: "35",
+      },
+      {
+        id: 102,
+        product_id: 85,
+        title: "Medium",
+        price: "45",
+      },
+      {
+        id: 103,
+        product_id: 85,
+        title: "Large",
+        price: "55",
+      },
     ],
-    waitlist: [],
-    startTime: new Date("2024-10-11T16:00:00"),
-    endTime: new Date("2024-10-11T17:30:00"),
-    description:
-      "Experience the joy of movement in our dance workshop! This class covers various dance styles, focusing on rhythm, coordination, and expression. Perfect for dancers of all skill levels.",
+    image: {
+      id: 305,
+      product_id: 85,
+      src: "https://nestasia.in/cdn/shop/files/FlowerVase_9.jpg?v=1695207441&width=600",
+    },
   },
   {
-    id: 4,
-    name: "Dance Workshop",
-    type: "dance",
-    capacity: 12,
-    currentBookings: [
-      "user15",
-      "user16",
-      "user17",
-      "user18",
-      "user19",
-      "user20",
-      "user21",
-      "user22",
-      "user23",
+    id: 90,
+    title: "Eco-Friendly Bamboo Cutting Board",
+    variants: [
+      {
+        id: 201,
+        product_id: 90,
+        title: "Standard",
+        price: "29",
+      },
     ],
-    waitlist: [],
-    startTime: new Date("2024-10-11T16:00:00"),
-    endTime: new Date("2024-10-11T17:30:00"),
-    description:
-      "Experience the joy of movement in our dance workshop! This class covers various dance styles, focusing on rhythm, coordination, and expression. Perfect for dancers of all skill levels.",
+    image: {
+      id: 315,
+      product_id: 90,
+      src: "https://m.media-amazon.com/images/I/51XeWkTibGL._AC_UF894,1000_QL80_.jpg",
+    },
   },
   {
-    id: 5,
-    name: "Dance Workshop",
-    type: "dance",
-    capacity: 12,
-    currentBookings: [
-      "user15",
-      "user16",
-      "user17",
-      "user18",
-      "user19",
-      "user20",
-      "user21",
-      "user22",
-      "user23",
+    id: 95,
+    title: "Cotton Canvas Tote Bag",
+    variants: [
+      {
+        id: 301,
+        product_id: 95,
+        title: "One Size / Natural",
+        price: "25",
+      },
     ],
-    waitlist: [],
-    startTime: new Date("2024-10-11T16:00:00"),
-    endTime: new Date("2024-10-11T17:30:00"),
-    description:
-      "Experience the joy of movement in our dance workshop! This class covers various dance styles, focusing on rhythm, coordination, and expression. Perfect for dancers of all skill levels.",
+    image: {
+      id: 330,
+      product_id: 95,
+      src: "https://m.media-amazon.com/images/I/71fxHG+mDyL._AC_UY1100_.jpg",
+    },
+  },
+  {
+    id: 100,
+    title: "Glass Water Bottle with Bamboo Lid",
+    variants: [
+      {
+        id: 401,
+        product_id: 100,
+        title: "500ml / Clear",
+        price: "18",
+      },
+      {
+        id: 402,
+        product_id: 100,
+        title: "750ml / Clear",
+        price: "22",
+      },
+    ],
+    image: {
+      id: 345,
+      product_id: 100,
+      src: "https://m.media-amazon.com/images/I/71fxHG+mDyL._AC_UY1100_.jpg",
+    },
+  },
+  {
+    id: 105,
+    title: "Wooden Serving Tray - Oak",
+    variants: [
+      {
+        id: 501,
+        product_id: 105,
+        title: "Small",
+        price: "30",
+      },
+      {
+        id: 502,
+        product_id: 105,
+        title: "Medium",
+        price: "40",
+      },
+      {
+        id: 503,
+        product_id: 105,
+        title: "Large",
+        price: "50",
+      },
+    ],
+    image: {
+      id: 360,
+      product_id: 105,
+      src: "https://m.media-amazon.com/images/I/71fxHG+mDyL._AC_UY1100_.jpg",
+    },
+  },
+  {
+    id: 110,
+    title: "Minimalist Wall Clock - Black",
+    variants: [
+      {
+        id: 601,
+        product_id: 110,
+        title: "One Size",
+        price: "75",
+      },
+    ],
+    image: {
+      id: 375,
+      product_id: 110,
+      src: "https://www.msrmarket.in/cdn/shop/products/IMG20230401105134_525x700.jpg?v=1680326500",
+    },
   },
 ];
-export default classes;
